@@ -22,6 +22,7 @@ const TodoCard = (props) => {
             <IconButton>
                 <DeleteForeverIcon sx={ { color: 'red' } } />
             </IconButton>
+
         </Card>
     );
 };
