@@ -3,9 +3,7 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 import AppDrawer from "./components/AppDrawer";
 import { useState } from "react";
-import { Route, Routes } from 'react-router-dom'
-import StartPage from "./components/StartPage";
-import FormikPage from "./components/Formik/FormikPage";
+
 
 function App() {
     // Drawer open/close
