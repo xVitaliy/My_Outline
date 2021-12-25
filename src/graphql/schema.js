@@ -46,3 +46,33 @@ mutation {
   }
 }
 `)
+
+
+//=============================================PAGINATOR_TEST=====================================================
+
+export const GET_USERS_PAGINATOR = gql(`
+query ($limit: Int, $offset:Int) {
+  users(limit: $limit, offset: $offset) {
+    name
+    id
+    rocket
+    timestamp
+  }
+}
+`)
+
+
+//===========================================USERS_SCROLL_PAGINATOR===============================================
+
+
+export const GET_USERS_SCROLL_PAGINATOR = gql(`
+query ($limit: Int, $offset:Int) {
+  users(limit: $limit, offset: $offset) {
+    name
+    id
+    rocket
+    timestamp
+  }
+}
+`)
+

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Drawer, Link, MenuItem } from "@mui/material";
+import { Box, Drawer, MenuItem } from "@mui/material";
 import { NavLink } from "react-router-dom";
 
 
@@ -9,7 +9,7 @@ const AppDrawer = ({ open, setOpen }) => {
             onClose={ () => setOpen(false) }
             open={ open }>
             <Box
-                sx={ { mt: 10, width: 300 } }>
+                sx={ { mt: 10, ':hover': { color: '#1976D2' } } }>
 
 
                 <MenuItem sx={ { justifyContent: 'center' } }>
@@ -23,11 +23,18 @@ const AppDrawer = ({ open, setOpen }) => {
                     </NavLink>
                 </MenuItem>
 
+                <MenuItem sx={ { justifyContent: 'center' } }>
+                    <NavLink style={ { fontSize: 32, color: 'darkblue', textDecoration: 'none' } }
+                             to={ 'usersPaginator' }> Test users paginator
+                    </NavLink>
+                </MenuItem>
 
-                {/*<NavLink to={ 'formik' }>*/ }
-                {/*    <MenuItem sx={ { justifyContent: 'center' } }> FormikPage and yup </MenuItem>*/ }
-                {/*</NavLink>*/ }
-                {/*<NavLink to={ 'main' }>USERS</NavLink>*/ }
+                <MenuItem sx={ { justifyContent: 'center' } }>
+                    <NavLink style={ { fontSize: 32, color: 'darkblue', textDecoration: 'none' } }
+                             to={ 'usersScrollPaginator' }> Test users scroll pag
+                    </NavLink>
+                </MenuItem>
+
             </Box>
         </Drawer>
     );

@@ -3,7 +3,6 @@ import User from "./User";
 import { Typography } from "@mui/material";
 
 const Users = ({ data, error, loading, deleteUser }) => {
-    console.log('Users')
     if (loading) return <p>Loading...</p>
     if (error) return <p>Error :(</p>
     if (data?.users.length === 0) return (

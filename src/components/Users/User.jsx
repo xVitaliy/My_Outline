@@ -3,7 +3,6 @@ import { Button, Card, Typography } from "@mui/material";
 import { Delete } from "@mui/icons-material";
 
 const User = (props) => {
-    console.log('__User')
     const { id, name, rocket, timestamp, deleteUser } = props;
     return (
         <Card sx={ { maxWidth: 550, mt: 5, border: 4, padding: 2 } }>

@@ -119,7 +119,7 @@ const FormikPage = () => {
                                         color={ 'secondary' }
                                         variant={ 'contained' }
                                         type={ 'submit' }
-                                    // пока isSubmitting === true кнопка будет в isable
+                                    // пока isSubmitting === true кнопка будет в disable
                                         disabled={ isSubmitting }
                                 >{ isSubmitting ? 'Submitting' : 'Submit' }
                                 </Button>
