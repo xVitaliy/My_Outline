@@ -1,11 +1,16 @@
-import React, { Fragment } from 'react';
+import React from 'react';
+import { Box, Typography } from "@mui/material";
 
-const StartPage = (props) => {
-    console.log('StartPage')
+
+const StartPage = () => {
     return (
-        <Fragment>
-            <h1>START PAGE</h1>
-        </Fragment>
+        <Box>
+            <Typography sx={ { textAlign: 'center', mt: 10 } }
+                        component={ 'h2' }
+                        variant={ 'h2' }>
+                Start Page
+            </Typography>
+        </Box>
     );
 };
 

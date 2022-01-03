@@ -14,7 +14,6 @@ function App() {
             <Header setOpen={ setOpen } />
             <AppDrawer open={ open } setOpen={ setOpen } />
             <Main />
-
         </div>
     );
 }

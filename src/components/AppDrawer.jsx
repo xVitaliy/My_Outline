@@ -35,6 +35,12 @@ const AppDrawer = ({ open, setOpen }) => {
                     </NavLink>
                 </MenuItem>
 
+                <MenuItem sx={ { justifyContent: 'center' } }>
+                    <NavLink style={ { fontSize: 32, color: 'darkblue', textDecoration: 'none' } }
+                             to={ 'algorithms' }> Algorithms
+                    </NavLink>
+                </MenuItem>
+
             </Box>
         </Drawer>
     );
